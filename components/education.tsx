@@ -20,7 +20,7 @@ export function Education() {
   ]
 
   return (
-    <section id="education" className="py-20 bg-pink-50">
+    <section id="education" className="py-20 bg-background">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">
           <span className="text-[#FF1493]">Education</span>
@@ -30,12 +30,12 @@ export function Education() {
           {education.map((edu, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg p-6 shadow-md border-t-4 border-[#5DADE2] hover:shadow-lg transition"
+              className="bg-gray-900 rounded-lg p-6 shadow-md border-t-4 border-[#5DADE2] hover:shadow-lg transition"
             >
               <div className="text-sm font-semibold text-[#FF1493] mb-3">{edu.period}</div>
               <h3 className="text-lg font-bold text-foreground mb-2">{edu.degree}</h3>
-              <p className="text-gray-600 text-sm mb-2">{edu.school}</p>
-              {edu.detail && <p className="text-gray-500 text-sm italic">{edu.detail}</p>}
+              <p className="text-gray-300 text-sm mb-2">{edu.school}</p>
+              {edu.detail && <p className="text-gray-400 text-sm italic">{edu.detail}</p>}
             </div>
           ))}
         </div>
