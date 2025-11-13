@@ -24,13 +24,13 @@ export function Skills() {
           {skills.map((skill, index) => {
             const colors = [
               { border: "border-[#FF1493]", dot: "bg-[#FF1493]", shadow: "hover:shadow-[0_0_20px_rgba(255,20,147,0.4)]" },
-              { border: "border-[#5DADE2]", dot: "bg-[#5DADE2]", shadow: "hover:shadow-[0_0_15px_rgba(93,173,226,0.3)]" },
+              { border: "border-[#5DADE2]", dot: "bg-[#5DADE2]", shadow: "hover:shadow-[0_0_20px_rgba(255,20,147,0.4)]" },
               { border: "border-[#FF1493]", dot: "bg-[#FF1493]", shadow: "hover:shadow-[0_0_20px_rgba(255,20,147,0.4)]" },
-              { border: "border-[#5DADE2]", dot: "bg-[#5DADE2]", shadow: "hover:shadow-[0_0_15px_rgba(93,173,226,0.3)]" },
+              { border: "border-[#5DADE2]", dot: "bg-[#5DADE2]", shadow: "hover:shadow-[0_0_20px_rgba(255,20,147,0.4)]" },
               { border: "border-[#FF1493]", dot: "bg-[#FF1493]", shadow: "hover:shadow-[0_0_20px_rgba(255,20,147,0.4)]" },
-              { border: "border-[#5DADE2]", dot: "bg-[#5DADE2]", shadow: "hover:shadow-[0_0_15px_rgba(93,173,226,0.3)]" },
+              { border: "border-[#5DADE2]", dot: "bg-[#5DADE2]", shadow: "hover:shadow-[0_0_20px_rgba(255,20,147,0.4)]" },
               { border: "border-[#FF1493]", dot: "bg-[#FF1493]", shadow: "hover:shadow-[0_0_20px_rgba(255,20,147,0.4)]" },
-              { border: "border-[#5DADE2]", dot: "bg-[#5DADE2]", shadow: "hover:shadow-[0_0_15px_rgba(93,173,226,0.3)]" },
+              { border: "border-[#5DADE2]", dot: "bg-[#5DADE2]", shadow: "hover:shadow-[0_0_20px_rgba(255,20,147,0.4)]" },
             ]
             const color = colors[index % colors.length]
             return (

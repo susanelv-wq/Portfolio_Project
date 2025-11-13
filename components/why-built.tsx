@@ -33,11 +33,7 @@ export function WhyBuilt() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className={`bg-card border-2 ${feature.borderColor} rounded-lg p-6 hover:shadow-lg ${
-                feature.borderColor === "border-[#5DADE2]"
-                  ? "hover:shadow-[0_0_20px_rgba(93,173,226,0.3)]"
-                  : "hover:shadow-[0_0_25px_rgba(255,20,147,0.5)]"
-              } transition shadow-lg`}
+              className={`bg-card border-2 ${feature.borderColor} rounded-lg p-6 hover:shadow-lg hover:shadow-[0_0_20px_rgba(255,20,147,0.4)] transition shadow-lg`}
             >
               <h3 className="text-xl font-bold text-white mb-3 text-center">
                 {feature.title}

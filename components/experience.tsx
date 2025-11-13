@@ -49,11 +49,24 @@ export function Experience() {
 
         <div className="space-y-12">
           {experiences.map((exp, index) => (
-            <div key={index} className={`border-l-4 ${index % 2 === 0 ? "border-[#FF1493]" : "border-[#5DADE2]"} pl-8 pb-8 last:pb-0 hover:shadow-lg ${index % 2 === 0 ? "hover:shadow-[0_0_20px_rgba(255,20,147,0.3)]" : "hover:shadow-[0_0_15px_rgba(93,173,226,0.2)]"} transition rounded-r-lg`}>
+            <div key={index} className={`border-l-4 ${index % 2 === 0 ? "border-[#FF1493]" : "border-[#5DADE2]"} pl-8 pb-8 last:pb-0 hover:shadow-lg hover:shadow-[0_0_20px_rgba(255,20,147,0.3)] transition rounded-r-lg`}>
               <div className="flex items-start justify-between mb-4">
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-white mb-1">{exp.title}</h3>
-                  <p className="text-lg text-gray-400 mb-2">{exp.company}</p>
+                  <p className="text-lg text-gray-400 mb-2">
+                    {exp.company === "Bahasa Bule" ? (
+                      <a 
+                        href="https://bahasabule.com" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="hover:text-[#FF1493] transition"
+                      >
+                        {exp.company}
+                      </a>
+                    ) : (
+                      exp.company
+                    )}
+                  </p>
                 </div>
                 <div className="text-right">
                   <div className="text-sm text-gray-400 mb-1">{exp.period}</div>

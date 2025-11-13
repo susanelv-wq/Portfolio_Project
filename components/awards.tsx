@@ -48,9 +48,9 @@ export function Awards() {
             ]
             const hoverShadows = [
               "hover:shadow-[0_0_25px_rgba(255,20,147,0.5)]",
-              "hover:shadow-[0_0_20px_rgba(93,173,226,0.3)]",
               "hover:shadow-[0_0_25px_rgba(255,20,147,0.5)]",
-              "hover:shadow-[0_0_20px_rgba(93,173,226,0.3)]",
+              "hover:shadow-[0_0_25px_rgba(255,20,147,0.5)]",
+              "hover:shadow-[0_0_25px_rgba(255,20,147,0.5)]",
               "hover:shadow-[0_0_25px_rgba(255,20,147,0.5)]",
             ]
             return (

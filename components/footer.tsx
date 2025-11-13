@@ -36,7 +36,7 @@ export function Footer() {
           </div>
           <div>
             <h4 className="font-bold mb-4 text-white">Follow</h4>
-            <div className="flex gap-4 text-sm text-white">
+            <div className="flex flex-col gap-2 text-sm text-white">
               <a 
                 href="https://www.linkedin.com/in/susan-elvionita-08864610a/" 
                 target="_blank"
@@ -52,6 +52,14 @@ export function Footer() {
                 className="hover:text-[#FF1493] transition"
               >
                 Instagram
+              </a>
+              <a 
+                href="https://bahasabule.com" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#FF1493] transition"
+              >
+                bahasabule.com
               </a>
             </div>
           </div>
