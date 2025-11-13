@@ -18,17 +18,30 @@ export function Skills() {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {skills.map((skill, index) => (
+          {skills.map((skill, index) => {
+            const colors = [
+              { border: "border-[#5DADE2]", dot: "bg-[#5DADE2]", shadow: "hover:shadow-[0_0_15px_rgba(93,173,226,0.3)]" },
+              { border: "border-[#FF1493]", dot: "bg-[#FF1493]", shadow: "hover:shadow-[0_0_15px_rgba(255,20,147,0.3)]" },
+              { border: "border-[#5DADE2]", dot: "bg-[#5DADE2]", shadow: "hover:shadow-[0_0_15px_rgba(93,173,226,0.3)]" },
+              { border: "border-[#FF1493]", dot: "bg-[#FF1493]", shadow: "hover:shadow-[0_0_15px_rgba(255,20,147,0.3)]" },
+              { border: "border-[#5DADE2]", dot: "bg-[#5DADE2]", shadow: "hover:shadow-[0_0_15px_rgba(93,173,226,0.3)]" },
+              { border: "border-[#FF1493]", dot: "bg-[#FF1493]", shadow: "hover:shadow-[0_0_15px_rgba(255,20,147,0.3)]" },
+              { border: "border-[#5DADE2]", dot: "bg-[#5DADE2]", shadow: "hover:shadow-[0_0_15px_rgba(93,173,226,0.3)]" },
+              { border: "border-[#FF1493]", dot: "bg-[#FF1493]", shadow: "hover:shadow-[0_0_15px_rgba(255,20,147,0.3)]" },
+            ]
+            const color = colors[index % colors.length]
+            return (
             <div
               key={index}
-              className="bg-card border-l-4 border-[#5DADE2] border-r border-t border-b border-gray-800 rounded-lg p-5 hover:border-[#5DADE2] hover:shadow-[0_0_20px_rgba(93,173,226,0.3)] transition shadow-lg"
+              className={`bg-card border-l-4 ${color.border} border-r border-t border-b border-gray-800 rounded-lg p-5 hover:shadow-lg ${color.shadow} transition shadow-lg`}
             >
               <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#5DADE2]"></div>
+                <div className={`w-2 h-2 rounded-full ${color.dot}`}></div>
                 <span className="font-medium text-white text-base">{skill}</span>
               </div>
             </div>
-          ))}
+            )
+          })}
         </div>
       </div>
     </section>

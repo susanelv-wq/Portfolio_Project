@@ -1,6 +1,7 @@
 import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
 import { About } from "@/components/about"
+import { WhyBuilt } from "@/components/why-built"
 import { Experience } from "@/components/experience"
 import { Education } from "@/components/education"
 import { Skills } from "@/components/skills"
@@ -15,6 +16,7 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
+      <WhyBuilt />
       <Experience />
       <Education />
       <Skills />

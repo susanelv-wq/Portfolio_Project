@@ -25,17 +25,29 @@ export function Education() {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {education.map((edu, index) => (
+          {education.map((edu, index) => {
+            const borderColors = [
+              "border-l-4 border-[#5DADE2]",
+              "border-l-4 border-[#FF1493]",
+              "border-l-4 border-[#5DADE2]",
+            ]
+            const hoverShadows = [
+              "hover:shadow-[0_0_20px_rgba(93,173,226,0.3)]",
+              "hover:shadow-[0_0_20px_rgba(255,20,147,0.3)]",
+              "hover:shadow-[0_0_20px_rgba(93,173,226,0.3)]",
+            ]
+            return (
             <div
               key={index}
-              className="bg-card border-l-4 border-[#5DADE2] border-r border-t border-b border-gray-800 rounded-lg p-6 hover:border-[#5DADE2] hover:shadow-[0_0_20px_rgba(93,173,226,0.3)] transition shadow-lg"
+              className={`bg-card ${borderColors[index]} border-r border-t border-b border-gray-800 rounded-lg p-6 hover:shadow-lg ${hoverShadows[index]} transition shadow-lg`}
             >
               <div className="text-base text-white mb-3">{edu.period}</div>
               <h3 className="text-xl font-bold text-white mb-2">{edu.degree}</h3>
               <p className="text-white text-base mb-2">{edu.school}</p>
               {edu.detail && <p className="text-white text-base italic">{edu.detail}</p>}
             </div>
-          ))}
+            )
+          })}
         </div>
       </div>
     </section>

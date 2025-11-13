@@ -4,24 +4,37 @@ export function Hero() {
   return (
     <section className="bg-background py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-          {/* Content */}
-          <div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-4">
-              <span className="text-white">Susan</span> <span className="text-[#5DADE2]">Elvionita</span>
-            </h1>
-          </div>
+        <div className="flex flex-col items-center">
+          {/* Name */}
+          <h1 className="text-5xl md:text-6xl font-bold mb-8 text-center">
+            <span className="text-white">Susan</span> <span className="text-[#5DADE2]">Elvionita</span>
+          </h1>
 
           {/* Image */}
-          <div className="flex justify-center">
-            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-lg overflow-hidden border-2 border-[#5DADE2] shadow-lg shadow-[#5DADE2]/30">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Susan%20pas%20foto-j5zSSyQFJc7WTieoNQ9W8Y3bcQoO49.jpg"
-                alt="Susan Elvionita"
-                fill
-                className="object-cover"
-                priority
-              />
+          <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-lg overflow-hidden border-2 border-[#5DADE2] shadow-lg shadow-[#5DADE2]/30 mb-8">
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Susan%20pas%20foto-j5zSSyQFJc7WTieoNQ9W8Y3bcQoO49.jpg"
+              alt="Susan Elvionita"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+
+          {/* Contact Info */}
+          <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-white">
+            <div>
+              <span>Badung - Bali, Indonesia</span>
+            </div>
+            <div>
+              <a href="mailto:susan@bahasabule.com" className="hover:text-[#5DADE2] transition">
+                susan@bahasabule.com
+              </a>
+            </div>
+            <div>
+              <a href="tel:+6281999201994" className="hover:text-[#5DADE2] transition">
+                +62 81 999 20 1994
+              </a>
             </div>
           </div>
         </div>

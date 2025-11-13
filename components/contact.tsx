@@ -11,16 +11,14 @@ export function Contact() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="mailto:susan@bahasabule.com"
-              className="inline-flex items-center justify-center gap-2 bg-[#5DADE2] text-white font-semibold py-3 px-8 rounded-lg hover:bg-[#5DADE2]/80 hover:shadow-[0_0_20px_rgba(93,173,226,0.5)] transition"
+              className="inline-flex items-center justify-center bg-[#5DADE2] text-white font-semibold py-3 px-8 rounded-lg hover:bg-[#5DADE2]/80 hover:shadow-[0_0_20px_rgba(93,173,226,0.5)] transition"
             >
-              <span>✉️</span>
               Email Me
             </a>
             <a
               href="tel:+6281999201994"
-              className="inline-flex items-center justify-center gap-2 border-2 border-[#5DADE2] text-[#5DADE2] font-semibold py-3 px-8 rounded-lg hover:bg-[#5DADE2] hover:text-white hover:shadow-[0_0_20px_rgba(93,173,226,0.5)] transition"
+              className="inline-flex items-center justify-center border-2 border-[#5DADE2] text-[#5DADE2] font-semibold py-3 px-8 rounded-lg hover:bg-[#5DADE2] hover:text-white hover:shadow-[0_0_20px_rgba(93,173,226,0.5)] transition"
             >
-              <span>📞</span>
               Call Me
             </a>
           </div>

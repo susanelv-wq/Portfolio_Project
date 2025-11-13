@@ -6,7 +6,7 @@ export function References() {
           <span className="text-[#5DADE2]">References</span>
         </h2>
 
-        <div className="bg-card border-l-4 border-[#5DADE2] border-r border-t border-b border-gray-800 rounded-lg p-8 hover:border-[#5DADE2] hover:shadow-[0_0_20px_rgba(93,173,226,0.3)] transition shadow-lg">
+        <div className="bg-card border-l-4 border-[#FF1493] border-r border-t border-b border-gray-800 rounded-lg p-8 hover:shadow-[0_0_20px_rgba(255,20,147,0.3)] transition shadow-lg">
           <div className="text-center">
             <h3 className="text-xl font-bold text-white mb-2">Balai Bahasa</h3>
             <p className="text-white text-base">Ministry of Education and Culture Republic of Indonesia</p>

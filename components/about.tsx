@@ -13,7 +13,7 @@ export function About() {
   ]
 
   return (
-    <section id="about" className="py-20 bg-background">
+    <section id="about" className="py-12 bg-background">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
           <span className="text-[#5DADE2]">About</span> <span className="text-white">Me</span>

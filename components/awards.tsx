@@ -35,10 +35,25 @@ export function Awards() {
         </h2>
 
         <div className="space-y-6">
-          {awards.map((award, index) => (
+          {awards.map((award, index) => {
+            const borderColors = [
+              "border-l-4 border-[#FF1493]",
+              "border-l-4 border-[#5DADE2]",
+              "border-l-4 border-[#FF1493]",
+              "border-l-4 border-[#5DADE2]",
+              "border-l-4 border-[#FF1493]",
+            ]
+            const hoverShadows = [
+              "hover:shadow-[0_0_20px_rgba(255,20,147,0.3)]",
+              "hover:shadow-[0_0_20px_rgba(93,173,226,0.3)]",
+              "hover:shadow-[0_0_20px_rgba(255,20,147,0.3)]",
+              "hover:shadow-[0_0_20px_rgba(93,173,226,0.3)]",
+              "hover:shadow-[0_0_20px_rgba(255,20,147,0.3)]",
+            ]
+            return (
             <div
               key={index}
-              className="bg-card border-l-4 border-[#5DADE2] border-r border-t border-b border-gray-800 rounded-lg p-6 hover:border-[#5DADE2] hover:shadow-[0_0_20px_rgba(93,173,226,0.3)] transition shadow-lg"
+              className={`bg-card ${borderColors[index % borderColors.length]} border-r border-t border-b border-gray-800 rounded-lg p-6 hover:shadow-lg ${hoverShadows[index % hoverShadows.length]} transition shadow-lg`}
             >
               <div className="flex items-start gap-4">
                 <div className="flex-1">
@@ -48,7 +63,8 @@ export function Awards() {
                 </div>
               </div>
             </div>
-          ))}
+            )
+          })}
         </div>
       </div>
     </section>
