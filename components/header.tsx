@@ -6,19 +6,19 @@ export function Header() {
           <h1 className="text-2xl font-bold text-white uppercase tracking-wide border-l-4 border-[#5DADE2] pl-3">SUSAN ELVIONITA</h1>
         </div>
         <nav className="hidden md:flex gap-8 text-base font-medium">
-          <a href="#about" className="text-white hover:text-[#5DADE2] transition">
+          <a href="#about" className="text-white hover:text-[#FF1493] transition">
             About
           </a>
-          <a href="#experience" className="text-white hover:text-[#5DADE2] transition">
+          <a href="#experience" className="text-white hover:text-[#FF1493] transition">
             Experience
           </a>
-          <a href="#education" className="text-white hover:text-[#5DADE2] transition">
+          <a href="#education" className="text-white hover:text-[#FF1493] transition">
             Education
           </a>
-          <a href="#skills" className="text-white hover:text-[#5DADE2] transition">
+          <a href="#skills" className="text-white hover:text-[#FF1493] transition">
             Skills
           </a>
-          <a href="#contact" className="text-white hover:text-[#5DADE2] transition">
+          <a href="#contact" className="text-white hover:text-[#FF1493] transition">
             Contact
           </a>
         </nav>

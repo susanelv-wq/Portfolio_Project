@@ -23,16 +23,19 @@ export function Hero() {
 
           {/* Contact Info */}
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-white">
-            <div>
+            <div className="flex items-center gap-2">
+              <span>📍</span>
               <span>Badung - Bali, Indonesia</span>
             </div>
-            <div>
-              <a href="mailto:susan@bahasabule.com" className="hover:text-[#5DADE2] transition">
+            <div className="flex items-center gap-2">
+              <span>✉️</span>
+              <a href="mailto:susan@bahasabule.com" className="hover:text-[#FF1493] transition">
                 susan@bahasabule.com
               </a>
             </div>
-            <div>
-              <a href="tel:+6281999201994" className="hover:text-[#5DADE2] transition">
+            <div className="flex items-center gap-2">
+              <span>📞</span>
+              <a href="tel:+6281999201994" className="hover:text-[#FF1493] transition">
                 +62 81 999 20 1994
               </a>
             </div>

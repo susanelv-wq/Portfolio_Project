@@ -26,7 +26,7 @@ export function WhyBuilt() {
           <span className="text-white">Indonesia</span>
         </h2>
         <div className="flex justify-center mb-12">
-          <div className="h-1 w-24 bg-gradient-to-r from-[#5DADE2] to-[#FF1493]"></div>
+          <div className="h-1 w-32 bg-gradient-to-r from-[#5DADE2] via-[#5DADE2] to-[#FF1493]"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -36,7 +36,7 @@ export function WhyBuilt() {
               className={`bg-card border-2 ${feature.borderColor} rounded-lg p-6 hover:shadow-lg ${
                 feature.borderColor === "border-[#5DADE2]"
                   ? "hover:shadow-[0_0_20px_rgba(93,173,226,0.3)]"
-                  : "hover:shadow-[0_0_20px_rgba(255,20,147,0.3)]"
+                  : "hover:shadow-[0_0_25px_rgba(255,20,147,0.5)]"
               } transition shadow-lg`}
             >
               <h3 className="text-xl font-bold text-white mb-3 text-center">

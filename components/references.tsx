@@ -2,9 +2,12 @@ export function References() {
   return (
     <section id="references" className="py-20 bg-background">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center">
           <span className="text-[#5DADE2]">References</span>
         </h2>
+        <div className="flex justify-center mb-12">
+          <div className="h-1 w-24 bg-gradient-to-r from-[#5DADE2] to-[#FF1493]"></div>
+        </div>
 
         <div className="bg-card border-l-4 border-[#FF1493] border-r border-t border-b border-gray-800 rounded-lg p-8 hover:shadow-[0_0_20px_rgba(255,20,147,0.3)] transition shadow-lg">
           <div className="text-center">

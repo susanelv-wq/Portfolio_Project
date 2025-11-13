@@ -40,13 +40,16 @@ export function Experience() {
   return (
     <section id="experience" className="py-20 bg-background">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center">
           <span className="text-[#5DADE2]">Experience</span> <span className="text-white">That Matters</span>
         </h2>
+        <div className="flex justify-center mb-12">
+          <div className="h-1 w-32 bg-gradient-to-r from-[#5DADE2] to-[#FF1493]"></div>
+        </div>
 
         <div className="space-y-12">
           {experiences.map((exp, index) => (
-            <div key={index} className="border-l-4 border-[#5DADE2] pl-8 pb-8 last:pb-0 hover:shadow-[0_0_15px_rgba(93,173,226,0.2)] transition rounded-r-lg">
+            <div key={index} className={`border-l-4 ${index % 2 === 0 ? "border-[#FF1493]" : "border-[#5DADE2]"} pl-8 pb-8 last:pb-0 hover:shadow-lg ${index % 2 === 0 ? "hover:shadow-[0_0_20px_rgba(255,20,147,0.3)]" : "hover:shadow-[0_0_15px_rgba(93,173,226,0.2)]"} transition rounded-r-lg`}>
               <div className="flex items-start justify-between mb-4">
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-white mb-1">{exp.title}</h3>

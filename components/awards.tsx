@@ -30,9 +30,12 @@ export function Awards() {
   return (
     <section className="py-20 bg-background">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center">
           <span className="text-white">Notable</span> <span className="text-[#5DADE2]">Achievements</span>
         </h2>
+        <div className="flex justify-center mb-12">
+          <div className="h-1 w-32 bg-gradient-to-r from-[#5DADE2] to-[#FF1493]"></div>
+        </div>
 
         <div className="space-y-6">
           {awards.map((award, index) => {
@@ -44,11 +47,11 @@ export function Awards() {
               "border-l-4 border-[#FF1493]",
             ]
             const hoverShadows = [
-              "hover:shadow-[0_0_20px_rgba(255,20,147,0.3)]",
+              "hover:shadow-[0_0_25px_rgba(255,20,147,0.5)]",
               "hover:shadow-[0_0_20px_rgba(93,173,226,0.3)]",
-              "hover:shadow-[0_0_20px_rgba(255,20,147,0.3)]",
+              "hover:shadow-[0_0_25px_rgba(255,20,147,0.5)]",
               "hover:shadow-[0_0_20px_rgba(93,173,226,0.3)]",
-              "hover:shadow-[0_0_20px_rgba(255,20,147,0.3)]",
+              "hover:shadow-[0_0_25px_rgba(255,20,147,0.5)]",
             ]
             return (
             <div

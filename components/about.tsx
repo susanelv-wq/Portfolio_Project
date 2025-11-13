@@ -15,9 +15,12 @@ export function About() {
   return (
     <section id="about" className="py-12 bg-background">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center">
           <span className="text-[#5DADE2]">About</span> <span className="text-white">Me</span>
         </h2>
+        <div className="flex justify-center mb-12">
+          <div className="h-1 w-24 bg-gradient-to-r from-[#5DADE2] to-[#FF1493]"></div>
+        </div>
 
         <div className="space-y-4">
           <ul className="space-y-4 text-base text-white">

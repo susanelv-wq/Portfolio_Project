@@ -13,22 +13,22 @@ export function Footer() {
             <h4 className="font-bold mb-4 text-white">Quick Links</h4>
             <ul className="space-y-2 text-sm text-white">
               <li>
-                <a href="#experience" className="hover:text-[#5DADE2] transition">
+                <a href="#experience" className="hover:text-[#FF1493] transition">
                   Experience
                 </a>
               </li>
               <li>
-                <a href="#education" className="hover:text-[#5DADE2] transition">
+                <a href="#education" className="hover:text-[#FF1493] transition">
                   Education
                 </a>
               </li>
               <li>
-                <a href="#skills" className="hover:text-[#5DADE2] transition">
+                <a href="#skills" className="hover:text-[#FF1493] transition">
                   Skills
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-[#5DADE2] transition">
+                <a href="#contact" className="hover:text-[#FF1493] transition">
                   Contact
                 </a>
               </li>
@@ -41,7 +41,7 @@ export function Footer() {
                 href="https://www.linkedin.com/in/susan-elvionita-08864610a/" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#5DADE2] transition"
+                className="hover:text-[#FF1493] transition"
               >
                 LinkedIn
               </a>
@@ -49,7 +49,7 @@ export function Footer() {
                 href="https://www.instagram.com/missusanelv" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#5DADE2] transition"
+                className="hover:text-[#FF1493] transition"
               >
                 Instagram
               </a>
