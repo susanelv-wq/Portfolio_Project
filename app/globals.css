@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Updated to pink and blue color scheme */
+  /* Updated to pink and blue color scheme with 3D gradient effect */
   --background: oklch(0.96 0 0);
   --foreground: oklch(0.2 0 0);
   --card: oklch(0.96 0 0);
