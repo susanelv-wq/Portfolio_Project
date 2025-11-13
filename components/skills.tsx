@@ -25,7 +25,7 @@ export function Skills() {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="bg-gray-900 border border-[#FF1493]/20 rounded-lg p-4 hover:border-[#FF1493] transition hover:shadow-md"
+              className="bg-gradient-to-br from-gray-100 to-white border border-[#FF1493]/20 rounded-lg p-4 hover:border-[#FF1493] transition hover:shadow-lg"
             >
               <div className="flex items-center gap-3">
                 <div className="w-3 h-3 rounded-full bg-[#FF1493]"></div>

@@ -33,7 +33,7 @@ export function Awards() {
           {awards.map((award, index) => (
             <div
               key={index}
-              className="bg-gray-900 rounded-lg p-6 border-l-4 border-[#FF1493] shadow-md hover:shadow-lg transition"
+              className="bg-gradient-to-br from-gray-100 to-white rounded-lg p-6 border-l-4 border-[#FF1493] shadow-lg hover:shadow-xl transition"
             >
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#FF1493] to-[#5DADE2] flex items-center justify-center flex-shrink-0 text-white font-bold text-sm">
@@ -42,7 +42,7 @@ export function Awards() {
                 <div className="flex-1">
                   <div className="text-sm font-semibold text-[#5DADE2] mb-1">{award.year}</div>
                   <h3 className="text-lg font-bold text-foreground mb-1">{award.title}</h3>
-                  <p className="text-gray-300">{award.detail}</p>
+                  <p className="text-gray-600">{award.detail}</p>
                 </div>
               </div>
             </div>

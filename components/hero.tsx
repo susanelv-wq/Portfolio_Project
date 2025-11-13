@@ -26,14 +26,14 @@ export function Hero() {
               </h2>
             </div>
             <p className="text-xl font-medium text-[#5DADE2] mb-6">Digital Marketing Specialist</p>
-            <p className="text-lg text-gray-300 leading-relaxed mb-8">
+            <p className="text-lg text-gray-700 leading-relaxed mb-8">
               A creative and result-driven Digital Marketing Specialist with over 10 years of experience in business
               development, social media marketing, website management, and branding. Adept at creating impactful
               campaigns, managing teams, and developing engaging content to drive business growth.
             </p>
 
             {/* Contact Info */}
-            <div className="space-y-3 text-sm text-gray-300">
+            <div className="space-y-3 text-sm text-gray-600">
               <div className="flex items-center gap-3">
                 <span className="text-[#5DADE2] font-semibold">📍</span>
                 <span>Badung, Bali</span>

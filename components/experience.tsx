@@ -56,8 +56,8 @@ export function Experience() {
             <div key={index} className="border-l-4 border-[#5DADE2] pl-8 pb-8 last:pb-0">
               <div className="text-sm font-semibold text-[#FF1493] mb-2">{exp.period}</div>
               <h3 className="text-2xl font-bold text-foreground mb-1">{exp.title}</h3>
-              <p className="text-lg text-gray-300 mb-4">{exp.company}</p>
-              <ul className="space-y-3 text-gray-300">
+              <p className="text-lg text-gray-600 mb-4">{exp.company}</p>
+              <ul className="space-y-3 text-gray-700">
                 {exp.highlights.map((highlight, i) => (
                   <li key={i} className="flex gap-3">
                     <span className="text-[#FF1493] font-bold text-xl leading-6">•</span>
